@@ -1,0 +1,3 @@
+<% @search_results.each do |message| %>
+<p><%= "#{User.find(message.user_id).name}: #{message[:message_text]}" %></p>
+<% end %>

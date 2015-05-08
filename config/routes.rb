@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'viber_messages#index'
+  get  'viber_messages/search' => 'viber_messages#search'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

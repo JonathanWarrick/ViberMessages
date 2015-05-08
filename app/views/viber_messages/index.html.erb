@@ -1,3 +1,9 @@
+<%= form_tag("viber_messages/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
 <% @message_counts.each do |message_count| %>
   <p><%= message_count %></p>
 <% end %>
